@@ -1,0 +1,19 @@
+header {
+  background-color: red;
+}
+
+.container {
+  border: 2px solid gold;
+  height: 200px;
+}
+
+nav {
+  background: rgb(8, 8, 99);
+}
+
+.row {
+  background-color: rgb(8, 8, 99);
+  height: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */

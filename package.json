@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.55.0"
+  },
+  "name": "css_frameworkss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Ole Rognan",
+  "license": "ISC",
+  "description": "",
+  "scripts": {
+    "compile":"sass scss/style.scss css/style.css & live-server"
+  }
+}

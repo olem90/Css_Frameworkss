@@ -1,0 +1,18 @@
+.container {
+  border: 2px solid gold;
+  height: 200px;
+}
+
+.row {
+  background-color: rgb(7, 121, 167);
+  height: 100px;
+}
+
+.login-form-container {
+  width: 600px;
+  height: 500px;
+  margin-block: auto;
+  background-color: rgb(161, 36, 36);
+}
+
+/*# sourceMappingURL=style.css.map */

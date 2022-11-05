@@ -1,0 +1,45 @@
+
+.login-form {
+    @media (max-width:768px) {
+        min-width: 360px;
+        label {
+            font-size: $lgFontSize;
+        }  
+        input {
+            font-size:$mdFontSize ;
+        }
+        button {
+            font-size: $lgFontSize;
+        }
+        .signup-text-1, .signup-text-2 {
+            font-size: $mdFontSize;
+        }
+        .forgot-pw {
+            font-size: $smFontSize;
+        }
+    }
+    @media (max-width:576px) {
+        min-width: 360px;
+        label {
+            font-size: $mdFontSize;
+        }  
+        input {
+            font-size:$smFontSize ;
+        }
+        button {
+            font-size: $mdFontSize;
+        }
+        .signup-text-1 {
+            font-size: $mdFontSize;
+        }
+        .signup-text-2 {
+            font-size: $mdFontSize;
+        }
+        .forgot-pw {
+            font-size: $xsFontSize;
+        }
+    }
+    @media (max-width:386px) {
+        min-width:300px;
+    }
+}

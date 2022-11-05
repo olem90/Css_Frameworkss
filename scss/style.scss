@@ -1,17 +1,222 @@
-$primary: rgb(7, 121, 167);
 
 
+/*FONT SIZE*/
+$xxlFontSize: 1.4rem;
+$xlFontSize: 1.25rem;
+$lgFontSize: 1.1rem;
+$mdFontSize: 0.9rem;
+$smFontSize: 0.8rem;
+$xsFontSize: 0.7rem;
 
-.container {
-    border: 2px solid gold;
-    height: 200px;
+/*COLORS*/
+$buttonColor: #4C76E8;
+$searchbarColor: rgb(121, 160, 219);
+
+/*LOGIN PAGE*/
+.login-form {
+    max-width: 600px;
+    height: 600px;
+    background-color: #F1F1F1;
+    font-family: 'poppins';
+    box-sizing: border-box;
+    box-shadow: 0 2px 3px 0px;
+    margin-block: auto;
+
+    input{
+        background-color: #F1F1F1;
+        outline: none;
+        width: 100%;
+        border-bottom: 1.4px solid gray;
+        justify-content: center;
+    }
+    label {
+        font-family: 'Poppins', sans-serif;
+        font-size: $xlFontSize;
+    }
+    h1{
+        font-family:'cooper';
+    }
+    span {
+        font-size: .8rem;
+    }
+    button {
+        background-color: $buttonColor;
+        font-size: $xlFontSize;
+    }
+    img {
+        max-width: 40px;
+    }
+    .signup-text-1 {
+        font-size: $lgFontSize;
+    }
+    .signup-text-2 {
+        font-size: $lgFontSize;
+    }
 }
+/*PROFILE PAGE*/
+.profile-container {
+    img {
+        max-width: 220px;
+        height: 220px;
+        object-fit: cover;
+    }
+    textarea {
+        outline: none;
+        box-shadow: 0 2px 2px 0px rgba(216, 214, 214);
+        resize: none;
+        max-width: 500px;
+        max-height: 200px;
+    }
+    button {
+        background: $buttonColor;
+        height: 30px;
+        @media (max-width:376px) {
+            font-size: $smFontSize;  
+        }
+    }
+    form {
+        max-width: 500px;
+    }
+    .profile-post {
+        max-width: 500px;
+        box-shadow: 0 1px 1px 1px rgb(158, 158, 158);
+        @media (max-width:992px) {
+            font-size: $mdFontSize;  
+        }
+        @media (max-width:376px) {
+            font-size: $smFontSize;  
+        }
+    }
+    .profile-post-img {
+        width: 36px;
+        height: 36px;
+        margin-right: 17px;
+        object-fit: cover;
+    }
+    .contacts {
+        box-shadow: 0 1px 1px 1px rgb(199, 198, 198);
+        @media (max-width:768px) {
+                width: 420px;  
+                margin-left: 22px;
+        }
+        @media (max-width:376px) {
+            min-width: 250px;  
+        }
+        img {
+            width: 46px;
+            height: 46px;
+        }
+        span {
+            font-size: 12px;
+        }
+    }
+}
+/*HOME PAGE*/
+.home-page-container {
+    form {
+        max-width: 600px;
+    }
+    textarea {
+        box-shadow: 0 1px 2px 0px rgba(216, 214, 214);
+        outline: none;
+        resize: none;
+    }
+    button {
+        background: $buttonColor;
+        @media (max-width:768px) {
+            font-size: $mdFontSize;
+            min-width: 90px;
+        }
+    }
+    .home-post {
+        box-shadow: 0 1px 1px 1px rgb(158, 158, 158);
+        max-width: 600px;
+        @media (max-width:768px) {
+            font-size: $mdFontSize;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+            @media (max-width:768px) {
+                max-width: 35px;
+                max-height: 35px;
+            }
+        } 
+    }
+    input {
+        position: absolute;
+        right: 10%; 
+        top: 20px;
+        min-width: 300px;
+        outline: none;
+        height: 34px;
+        border: 3px solid $searchbarColor;
+    }
+        @media (max-width:768px) {
+            input {
+                min-width: 250px;
+                right: 1%;
+            }
+        }
+        @media (max-width:576px) {
+            input {
+                top: 12px;
+                right: 3%;
+                min-width: 200px;
+            }
+        }
+}
+
+/*NAVBAR*/
 .navbar {
-    background: $primary;
-    
+    button {
+        border: none;
+    }
+} 
+/*MEDIA QUERIES LOGIN PAGE*/
+.login-form {
+    @media (max-width:768px) {
+        min-width: 360px;
+        label {
+            font-size: $lgFontSize;
+        }  
+        input {
+            font-size:$mdFontSize ;
+        }
+        button {
+            font-size: $lgFontSize;
+        }
+        .signup-text-1, .signup-text-2 {
+            font-size: $mdFontSize;
+        }
+        .forgot-pw {
+            font-size: $smFontSize;
+        }
+    }
+    @media (max-width:576px) {
+        min-width: 360px;
+        label {
+            font-size: $mdFontSize;
+        }  
+        input {
+            font-size:$smFontSize ;
+        }
+        button {
+            font-size: $mdFontSize;
+        }
+        .signup-text-1 {
+            font-size: $mdFontSize;
+        }
+        .signup-text-2 {
+            font-size: $mdFontSize;
+        }
+        .forgot-pw {
+            font-size: $xsFontSize;
+        }
+    }
+    @media (max-width:386px) {
+        min-width:310px;
+    }
 }
 
-.row {
-    background-color: $primary;
-    height: 100px;
-}
+

@@ -1,19 +1,226 @@
-header {
-  background-color: red;
+/*FONT SIZE*/
+/*COLORS*/
+/*LOGIN PAGE*/
+.login-form {
+  max-width: 600px;
+  height: 600px;
+  background-color: #F1F1F1;
+  font-family: "poppins";
+  box-sizing: border-box;
+  box-shadow: 0 2px 3px 0px;
+  margin-block: auto;
+}
+.login-form input {
+  background-color: #F1F1F1;
+  outline: none;
+  width: 100%;
+  border-bottom: 1.4px solid gray;
+  justify-content: center;
+}
+.login-form label {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+}
+.login-form h1 {
+  font-family: "cooper";
+}
+.login-form span {
+  font-size: 0.8rem;
+}
+.login-form button {
+  background-color: #4C76E8;
+  font-size: 1.25rem;
+}
+.login-form img {
+  max-width: 40px;
+}
+.login-form .signup-text-1 {
+  font-size: 1.1rem;
+}
+.login-form .signup-text-2 {
+  font-size: 1.1rem;
 }
 
-.container {
-  border: 2px solid gold;
-  height: 200px;
+/*PROFILE PAGE*/
+.profile-container img {
+  max-width: 220px;
+  height: 220px;
+  object-fit: cover;
+}
+.profile-container textarea {
+  outline: none;
+  box-shadow: 0 2px 2px 0px rgb(216, 214, 214);
+  resize: none;
+  max-width: 500px;
+  max-height: 200px;
+}
+.profile-container button {
+  background: #4C76E8;
+  height: 30px;
+}
+@media (max-width: 376px) {
+  .profile-container button {
+    font-size: 0.8rem;
+  }
+}
+.profile-container form {
+  max-width: 500px;
+}
+.profile-container .profile-post {
+  max-width: 500px;
+  box-shadow: 0 1px 1px 1px rgb(158, 158, 158);
+}
+@media (max-width: 992px) {
+  .profile-container .profile-post {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 376px) {
+  .profile-container .profile-post {
+    font-size: 0.8rem;
+  }
+}
+.profile-container .profile-post-img {
+  width: 36px;
+  height: 36px;
+  margin-right: 17px;
+  object-fit: cover;
+}
+.profile-container .contacts {
+  box-shadow: 0 1px 1px 1px rgb(199, 198, 198);
+}
+@media (max-width: 768px) {
+  .profile-container .contacts {
+    width: 420px;
+    margin-left: 22px;
+  }
+}
+@media (max-width: 376px) {
+  .profile-container .contacts {
+    min-width: 250px;
+  }
+}
+.profile-container .contacts img {
+  width: 46px;
+  height: 46px;
+}
+.profile-container .contacts span {
+  font-size: 12px;
 }
 
-nav {
-  background: rgb(8, 8, 99);
+/*HOME PAGE*/
+.home-page-container form {
+  max-width: 600px;
+}
+.home-page-container textarea {
+  box-shadow: 0 1px 2px 0px rgb(216, 214, 214);
+  outline: none;
+  resize: none;
+}
+.home-page-container button {
+  background: #4C76E8;
+}
+@media (max-width: 768px) {
+  .home-page-container button {
+    font-size: 0.9rem;
+    min-width: 90px;
+  }
+}
+.home-page-container .home-post {
+  box-shadow: 0 1px 1px 1px rgb(158, 158, 158);
+  max-width: 600px;
+}
+@media (max-width: 768px) {
+  .home-page-container .home-post {
+    font-size: 0.9rem;
+  }
+}
+.home-page-container .home-post img {
+  width: 50px;
+  height: 50px;
+}
+@media (max-width: 768px) {
+  .home-page-container .home-post img {
+    max-width: 35px;
+    max-height: 35px;
+  }
+}
+.home-page-container input {
+  position: absolute;
+  right: 10%;
+  top: 20px;
+  min-width: 300px;
+  outline: none;
+  height: 34px;
+  border: 3px solid rgb(121, 160, 219);
+}
+@media (max-width: 768px) {
+  .home-page-container input {
+    min-width: 250px;
+    right: 1%;
+  }
+}
+@media (max-width: 576px) {
+  .home-page-container input {
+    top: 12px;
+    right: 3%;
+    min-width: 200px;
+  }
 }
 
-.row {
-  background-color: rgb(8, 8, 99);
-  height: 100px;
+/*NAVBAR*/
+.navbar button {
+  border: none;
+}
+
+/*MEDIA QUERIES LOGIN PAGE*/
+@media (max-width: 768px) {
+  .login-form {
+    min-width: 360px;
+  }
+  .login-form label {
+    font-size: 1.1rem;
+  }
+  .login-form input {
+    font-size: 0.9rem;
+  }
+  .login-form button {
+    font-size: 1.1rem;
+  }
+  .login-form .signup-text-1, .login-form .signup-text-2 {
+    font-size: 0.9rem;
+  }
+  .login-form .forgot-pw {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 576px) {
+  .login-form {
+    min-width: 360px;
+  }
+  .login-form label {
+    font-size: 0.9rem;
+  }
+  .login-form input {
+    font-size: 0.8rem;
+  }
+  .login-form button {
+    font-size: 0.9rem;
+  }
+  .login-form .signup-text-1 {
+    font-size: 0.9rem;
+  }
+  .login-form .signup-text-2 {
+    font-size: 0.9rem;
+  }
+  .login-form .forgot-pw {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 386px) {
+  .login-form {
+    min-width: 310px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

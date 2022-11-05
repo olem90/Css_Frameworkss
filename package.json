@@ -14,6 +14,7 @@
   "license": "ISC",
   "description": "",
   "scripts": {
-    "compile":"sass scss/style.scss css/style.css & live-server"
+    "compile":"sass scss/style.scss css/style.css & live-server",
+    "watch": "sass --watch scss/style.scss css/style.css"
   }
 }
